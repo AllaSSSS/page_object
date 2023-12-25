@@ -1,0 +1,17 @@
+url: https://test-stand.gb.ru/
+url_login: https://test-stand.gb.ru/login
+browser: chrome
+sleep_time: 1
+
+
+login: 'Sidor03'
+pswd: 'a291844463'
+
+
+title: 'post for homework 2'
+description: 'this post is to accomplish homework 2 in API Python'
+content:  'homework 2 is to create post and check that it has been properly saved'
+
+u_name: 'Anna'
+u_email: 'anna_sid@mail.ru'
+content_field: 'Hello, thank you for your website'
