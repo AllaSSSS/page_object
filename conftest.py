@@ -1,4 +1,4 @@
-import pytest, yaml
+import pytest, yaml, requests
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -21,3 +21,9 @@ def browser():
         driver = webdriver.Chrome(service=service, options=options)
     yield driver
     driver.quit()
+
+
+@pytest.fixture(scope='session')
+def session_request():
+    session = requests.Session()
+    yield session
