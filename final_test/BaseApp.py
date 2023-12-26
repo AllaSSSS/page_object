@@ -34,14 +34,3 @@ class BasePage:
             logging.exception('Exception while opening site')
             start_browsing = None
         return start_browsing
-
-    # def get_alert_txt(self):
-    #     try:
-    #         alert = self.driver.switch_to.alert
-    #         return alert.text
-    #     except:
-    #         logging.exception('Alert exception')
-    #         return None
-    #
-    #     #alert.accept()
-    #     #return msg
